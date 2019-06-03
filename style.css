@@ -1,0 +1,144 @@
+body {
+  background-image:url(data:image/jpeg;base64,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);
+  background-size: cover;
+  font-family: 'Architects Daughter', cursive;
+}
+
+h1 {
+  font-size: 105px;
+  color: #F3A20B;
+  text-align: center;
+}
+
+section p {
+  font-size: 65px;
+  color: white;
+  text-align: center;
+}
+
+section {
+  text-align: center;
+  font-size: 45px 30px 30px;
+  font-weight: bold;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  padding: 2px 10px;
+  font-size: 15px;
+  text-align: left;
+
+}
+
+button {
+  font-size: 20px;
+  line-height: 10px;
+  text-align: center;
+  width: 120px;
+  height: 32px;
+}
+
+categorias {
+  text-align: center;
+}
+
+
+
+button#tema1 {
+  font-size: 20px;
+  line-height: 10px;
+  text-align: center;
+  width: 220px;
+  height: 32px;
+  background-size: cover;
+  float:left;
+}
+
+button#tema2 {
+  font-size: 20px;
+  line-height: 10px;
+  text-align: center;
+  width: 220px;
+  height: 32px;
+  background-size: cover;
+}
+
+footer {
+  text-align: center;
+  color: pink;
+  font-size: 25px;
+  margin:400px;
+
+}
+
+/*tema1 */
+div#marvel {
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+p#div#marvel {
+  font-size: 18px;
+  color: white;
+  text-align: left;
+}
+
+h3 {
+  font-size: 35px;
+  color: #F3A20B;
+  text-align: center;
+
+}
+
+div#game of thrones {
+  background-size: cover;
+}
+
+h4 {
+  background-size: cover;
+  font-size: 35px;
+  color:#F3A20B ;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  color: black;
+  text-align: left;
+}
+
+.body#respuesta {
+  background-image:url(https://images.alphacoders.com/442/442499.jpg);
+  background-size: cover;
+}
+
+h2 {
+  font-size: 85px;
+  color: yellow;
+  text-align: center;
+}
+
+p {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+h5 {
+  font-size: 25px;
+  color: yellow;
+  text-align: center;
+}
+
+resultado#h7 {
+  font-size: 25px;
+  color: yellow;
+  text-align: center;
+}
+
+resultado#h8 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}

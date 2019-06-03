@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+  </head>
+    <body>
+
+<section id="inicio">
+    <h1>Bienvenidos a la Trivia</h1>
+    <p>Estas listo para jugar?</p>
+    <input type="text" id="name" placeholder="Ingrese su nombre">
+    <button type="button" id="capturar-nombre" onclick="dar_click()">Jugar</button>
+</section>
+
+<section id="saludo" style="none">
+    <p id="nombre">  </p>
+</section>
+
+<div id="categorias" style="display:none">
+
+    <h1>Elige un tema:</h1>
+
+    <button type="button" id="tema1" onclick="dar_click2()">Marvel</button>
+    <button type="button" id="tema2" onclick="dar_click3()" >Game of Thrones</button>
+
+
+
+</div>
+
+<div id="marvel" style="display:none">
+  <form action="resultado.html" method="post">
+      <a name="Marvel" ></a>
+      <h3>MARVEL</h3>
+      <p>Lea con atencion y marque la respuesta correcta. </p>
+      <p>1. ¿A qué año regresaron IRONMAN Y CAPITAN AMERICA para obtener más particulas de PYM? </p>
+      <p>
+        <input type="radio" name="tipo1" id="p11" value="1960" /> 1960</p>
+      <p>
+        <input type="radio" name="tipo1" id="p12" value="1970" /> 1970</p>
+      <p>
+        <input type="radio" name="tipo1" id="p13" value="1972" /> 1972</p>
+
+      <p>2. ¿Qué Villano custodia la gema del alma en VORMIR? </p>
+      <p>
+        <input type="radio" name="tipo2" id="p21" value="REDSKULL" /> REDSKULL</p>
+      <p>
+        <input type="radio" name="tipo2" id="p22" value="ULTRON" /> ULTRON</p>
+      <p>
+        <input type="radio" name="tipo2" id="p23" value="THANOS" /> THANOS</p>
+
+      <p>3. ¿Cuanto ama MORGAN a su papá? </p>
+      <p>
+        <input type="radio" name="tipo3" id="p31" value="3000" /> 3000</p>
+      <p>
+        <input type="radio" name="tipo3" id="p32" value="30 000" /> 30 000</p>
+      <p>
+        <input type="radio" name="tipo3" id="p33" value="300 000" /> 300 000</p>
+
+      <form action="resultado.html" method="post">
+        <button type="submit" id="enviar" onclick="dar_click4()">Terminar</button>
+        <button type="reset" id="limpiar" onclick="dar_click5()">Borrar</button>
+      </form>
+    </form>
+</div>
+
+<div id="game of thrones" style="display:none">
+  <form action="resultado.html" method="post">
+      <a name="GAME OF THRONES" ></a>
+      <h4>GAME OF THRONES</h4>
+        <p>Lea con atencion y marque la respuesta correcta. </p>
+        <p>1. ¿Con qué rematas a un caminante blanco? </p>
+        <p>
+          <input type="radio" name="tipo4" id="p41" value="ACERO VALYRIO" /> ACERO VALYRIO</p>
+        <p>
+          <input type="radio" name="tipo4" id="p42" value="VIDRIAGON" /> VIDRIAGON</p>
+        <p>
+          <input type="radio" name="tipo4" id="p43" value="ESPADA" /> ESPADA</p>
+
+        <p>2. ¿Verdadero nombre de JON SNOW? </p>
+        <p>
+          <input type="radio" name="tipo5" id="p51" value="RHAEGAR TARGARYEN" /> RHAEGAR TARGARYEN</p>
+        <p>
+          <input type="radio" name="tipo5" id="p52" value="DAERON TARGARYEN" /> DAERON TARGARYEN</p>
+        <p>
+          <input type="radio" name="tipo5" id="p53" value="AEGON TARGARYEN" /> AEGON TARGARYEN</p>
+
+        <p>3. ¿DAENERYS de JON SNOW es su? </p>
+        <p>
+          <input type="radio" name="tipo6" id="p61" value="TIA" /> TIA</p>
+        <p>
+          <input type="radio" name="tipo6" id="p62" value="SOBRINA" /> SOBRINA</p>
+        <p>
+          <input type="radio" name="tipo6" id="p63" value="HERMANA" /> HERMANA</p>
+
+          <form action="resultado.html" method="post">
+            <button type="submit" id="enviar" onclick="resultado2()">Terminar</button>
+            <button type="reset" id="limpiar" onclick="dar_click5()">Borrar</button>
+          </form>
+        </form>
+</div>
+
+<div id="resultado1" style="display:none">
+  <form action="resultado.html" method="post">
+      <a name="Marvel" ></a>
+      <h5>RESPUESTAS CORRECTAS DE MARVEL</h5>
+      <p>Lea con atencion y marque la respuesta correcta. </p>
+      <p>1. ¿A qué año regresaron IRONMAN Y CAPITAN AMERICA para obtener más particulas de PYM? </p>
+      <p>
+        <input type="text" name="tipo1" id="p12" value="1970" /> 1970</p>
+
+      <p>2. ¿Qué Villano custodia la gema del alma en VORMIR? </p>
+      <p>
+        <input type="text" name="tipo2" id="p21" value="REDSKULL" /> REDSKULL</p>
+
+      <p>3. ¿Cuanto ama MORGAN a su papá? </p>
+      <p>
+        <input type="text" name="tipo3" id="p31" value="3000" /> 3000</p>
+      </form>
+</div>
+
+
+
+<div id="resultado2" style="display:none">
+  <form action="resultado.html" method="post">
+      <a name="GAME OF THRONES" ></a>
+      <h5>RESPUESTAS CORRECTAS DE GAME OF THRONES</h5>
+        <p>Lea con atencion y marque la respuesta correcta. </p>
+        <p>1. ¿Con qué rematas a un caminante blanco? </p>
+        <p>
+          <input type="radio" name="tipo4" id="p42" value="VIDRIAGON" /> VIDRIAGON</p>
+
+        <p>2. ¿Verdadero nombre de JON SNOW? </p>
+        <p>
+          <input type="radio" name="tipo5" id="p53" value="AEGON TARGARYEN" /> AEGON TARGARYEN</p>
+
+        <p>3. ¿DAENERYS de JON SNOW es su? </p>
+        <p>
+          <input type="radio" name="tipo6" id="p61" value="TIA" /> TIA</p>
+        </form>
+</div>
+
+
+<div id="resultado" style="display:none">
+    <a name="resultado" ></a>
+      <h7>RESULTADO</h7>
+          <p>
+
+          </p>
+      <hr/>
+
+      <h2>Gracias por jugar la Trivia</h2>
+
+      <p>Si desea volver a jugar, dar click <a href="/diana - copia/index.html">AQUI</a></p>
+
+      <p>Para salir e ir a google, puede hacer click <a href="http://www.google.com"> AQUI </a></p>
+</div>
+
+
+<footer id="finalderechos">
+  <p2>Todos los derechos reservados por Diana y Nora</p2>
+</footer>
+
+<script src="resultado.html" charset="utf-8"></script>
+<script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
